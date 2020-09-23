@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: url(/image/nook_small.jpg) no-repeat;
+            float: left;
+            margin: 10px;
+            border: 10px dashed black;
+            padding: 20px;
+        }
+
+        .border-box{
+            background-clip: border-box;
+        }
+
+        .padding-box{
+            background-clip:padding-box
+        }
+
+        .content-box{
+            background-clip: content-box;
+        }
+
+        p{
+            font-size: 60px;
+            background: url(/image/mosaic-3394375_640.jpg);
+            /* -webkit-background-clip: text; */
+            color: transparent;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box border-box"></div>
+    <div class="box padding-box"></div>
+    <div class="box content-box"></div>
+    <p>HELLO</p>
+</body> 
+</html>
